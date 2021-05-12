@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/semantic/semantic.min.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <style>
+        .container{
+            margin-top: 10px;
+        }
+    </style>
+    <div class="container ui">
+       <h1>Dashboard page</h1>
+        <p>Dashboard home page</p>
+        <p>INFO : </p>
+        <% if(locals.user && locals.user.email){%>
+
+            <p><%- locals.user.email %></p>
+            
+            <%}else{%>
+
+                <script>window.location.replace('/login');</script>
+
+            <%}%>
+        
+        
+        <a href="/disconnect"><button class="ui secondary">Disconnect</button></a>
+        
+    </div>
+</body>
+</html>

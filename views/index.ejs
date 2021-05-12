@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>UI-Challenges</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="/assets/css/index.css">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+            <link rel="stylesheet" href="/assets/semantic/semantic.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+        <body>
+            <nav>
+                <ul>
+                    <li>WeNeedHelp.com</li>
+                </ul>
+                <div class="row">
+                    <div class="col reveal" id="header_info">
+                        <h2>Demande et reçoit de l'aide</h2>
+                        <p>Entrez votre email et recevez chaques jours des informations afin de réaliser une maquette tous les jours.</p>
+                        <input type="text" placeholder="Entrez votre adresse email"><button type="submit" value="Envoyer" id="submit">Envoyer</button>
+                    </div>
+                    <div class="col" id="illu_info">
+                        <div class="card">
+                            <h3><span style="font-weight: bold;font-size: 24px">Bonjour,</span><br><span style="font-size: 22px;">Mickael</span></h3>
+                            <img src="assets/img/splash.png" alt="Err" id="profile_card"/>
+                            <p id="title_search">Trouver un challenge UI</p>
+                            <div id="search_bar_design">
+                                <input id="search" type="text" placeholder="Entrez un numéro">
+                                <i class="fas fa-search" id="search"></i>
+                            </div>
+                            
+
+                            <div id="shape">
+                                <div id="load_shape">Hidden Text</div>
+                                <div id="load_shape">Hidden Text</div>
+                                <div id="load_shape">Hidden Text</div>
+                            </div>
+                            
+                            <div id="nav">
+                                <div id="home">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div id="search_nav_icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div id="user">
+                                    <i class="far fa-user"></i>
+                                </div>
+                            </div>
+
+                            <div id="mailbox">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div id="search_icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div id="tools">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+            <div class="custom-shape-divider-top-1612117500">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="custom-shape-divider-top-16121175005">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="informations">
+                <div class="row reveal" id="informations">
+                    <h2>Ce que UI Challenges vous propose</h2>
+                    <div class="col-sm-6">
+                        <div id="tasks">
+                            <i class="fas fa-users" id="icon"></i>
+                            <h2>Recevoir des défis</h2>
+                            <p id="description">Vous recevrez un défi uniquement de conception d'interface utilisateur pendant 100 jours.</p>
+                            <a id="communication">Donner mon adresse email</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="tasks">
+                            <i class="fas fa-users" id="icon"></i>
+                            <h2>Crée & Partager</h2>
+                            <p id="description">Interprétez puis créez votre propre design à partager sur notre site web.</p>
+                            <a id="communication">Partager ma maquette</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="tasks">
+                            <i class="fas fa-users" id="icon"></i>
+                            <h2>Communauté d'entraide</h2>
+                            <p id="description">Visionne le travail de la communauté pour t'inspirer directement sur notre site web.</p>
+                            <a id="communication">Voir les maquettes</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="tasks" class="selected">
+                            <i class="fas fa-users" id="icon"></i>
+                            <h2>Récompenses Surprises</h2>
+                            <p id="description">Gagnez des récompenses surprises aléatoires telles que des ressources de conception haut de gamme.</p>
+                            <a id="communication" class="selected_plus">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="feedback" class="reveal">
+                <div class="custom-shape-divider-bottom-1612377014">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                <div class="custom-shape-divider-bottom-1612377313">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                <div class="row" id="feedback_row">
+                    <h2 id="title_feed" class="col-sm-6">Les clients sont satisfait de notre plateforme<br> <p id="p_feed">Voici les avis de nos utilisateurs vis à vis de cette plateforme qui vise à vous faire progresser.</p></h2>
+                    <div class="col-sm-6">
+                        <div id="tasks">
+                            <img src="assets/img/splash.png" alt="Err" id="profile_card"/>
+                            <p id="profile_screen">Adrien</p>
+                            <div id="note">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p id="feed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates quaerat placeat modi culpa repellendus quidem asperiores quis corporis, accusantium ullam dolor, cumque iste animi ipsum sint sunt exercitationem reiciendis?</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="tasks">
+                            <img src="assets/img/splash.png" alt="Err" id="profile_card"/>
+                            <p id="profile_screen">Adrien</p>
+                            <div id="note">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p id="feed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates quaerat placeat modi culpa repellendus quidem asperiores quis corporis, accusantium ullam dolor, cumque iste animi ipsum sint sunt exercitationem reiciendis?</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="tasks">
+                            <img src="assets/img/splash.png" alt="Err" id="profile_card"/>
+                            <p id="profile_screen">Adrien</p>
+                            <div id="note">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p id="feed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptates quaerat placeat modi culpa repellendus quidem asperiores quis corporis, accusantium ullam dolor, cumque iste animi ipsum sint sunt exercitationem reiciendis?</p>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="custom-shape-divider-bottom-16123770149">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="custom-shape-divider-bottom-16123773132">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+           <div id="footer" class="reveal">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-sm-3" id="header_title_footer">
+                            <h3>UI CHALLENGE</h3>
+                            <p>Crée par Mickael</p>
+                       </div>
+                       <div class="col-sm-3">
+                        <h3>Pages</h3>
+                        <ul>
+                            <li><a>Inspiration</a></li>
+                            <li><a>Partager mon travail</a></li>
+                            <li><a>Récompenses</a></li>
+                        </ul>
+                       </div>
+                       <div class="col-sm-3">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a>Politiques de confidentialités</a></li>
+                            <li><a>Idées de fonctionnalités ?</a></li>
+                            <li><a>Nous contacter</a></li>
+                        </ul>
+                       </div>
+                       <div class="col-sm-3">
+                        <h3>Réseaux</h3>
+                        <ul>
+                            <li><a>Twitter</a></li>
+                            <li><a>Dribbble</a></li>
+                            <li><a>Instagram</a></li>
+                        </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <script src="assets/index.js"></script>
+        </body>
+    </html>
