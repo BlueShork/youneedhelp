@@ -8,8 +8,13 @@ class Instagram{
 
         console.log("CHILD WORK");
 
-(async () => {
-  const browser = await puppeteer.launch({headless: false});
+      
+const puppeteer = require('puppeteer');
+async function main() {
+const browser = await puppeteer.launch({
+headless: false,
+args: ['--no-sandbox']
+});
   const page = await browser.newPage();
   await page.goto('https://instagram.com');
 
@@ -89,8 +94,10 @@ class Instagram{
   callback("Le serveur à bien envoyer le message");
 
   await browser.close();
-})();
+}
 
+// Start the script
+main();
 
 
 
@@ -99,6 +106,11 @@ class Instagram{
 
 
 }
+
+
+
+
+
 
 
 module.exports = Instagram;
