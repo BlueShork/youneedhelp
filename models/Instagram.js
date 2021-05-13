@@ -6,7 +6,7 @@ class Instagram{
 
     static send(instatag, message_been_send, callback){
 
-        console.log("CHILD WORK");
+        console.log("Starts");
 
       
 const puppeteer = require('puppeteer');
