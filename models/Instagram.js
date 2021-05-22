@@ -36,8 +36,8 @@ async function main() {
 
 
 
-  const CookieValidation = await page.$('button.bIiDR');
-  await CookieValidation.click();
+  // const CookieValidation = await page.$('button.bIiDR');
+  // await CookieValidation.click();
 
 
 
