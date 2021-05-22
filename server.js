@@ -1,6 +1,11 @@
 let express = require('express');
 let bodyParser = require('body-parser');
 let session = require('express-session');
+let fetch = require('node-fetch');
+const axios = require('axios').default;
+const https = require("http");
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
 
 const helmet = require('helmet');
 
@@ -75,6 +80,25 @@ app.post('/child', (request, response) => {
 
 
 
+})
+
+app.get('/get', (request, response) => {
+    response.json(["Tony","Lisa","Michael","Ginger","Food"]);
+    // function file_get_content(filename){
+    //     fetch(filename)
+    //     .then(resp => resp.json())
+    //     .then(data => {
+    //         // console.log(data);
+    //         const result = data;
+    //         console.log(result);
+           
+    //     });
+
+    // }
+    // file_get_content("http://localhost/piege/index.php?q=ethan.mrsst");
+
+
+    
 })
 
 app.get('/dashboard', (request, response) => {

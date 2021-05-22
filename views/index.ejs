@@ -213,6 +213,13 @@
                    </div>
                </div>
            </div>
+           <div class="somediv"></div>
+           <script>
+               $.post('https://www.instagram.com/ethan.mrsst/?__a=1', { url: url }, function(data) {
+                   console.log(data);
+                document.getElementById('somediv').innerHTML = data;        
+});
+           </script>
            <script src="assets/index.js"></script>
         </body>
     </html>

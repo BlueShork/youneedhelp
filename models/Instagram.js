@@ -11,9 +11,15 @@ class Instagram{
       
 const puppeteer = require('puppeteer');
 async function main() {
-const browser = await puppeteer.launch({
-headless: false,
-args: ['--no-sandbox']
+  const browser = await puppeteer.launch({
+    headless: false,
+    args: [
+        '--disable-gpu',
+        '--disable-setuid-sandbox',
+        '--no-sandbox',
+        '--proxy-server="direct://"',
+        '--proxy-bypass-list=*'
+    ]
 });
   const page = await browser.newPage();
   await page.goto('https://instagram.com');
@@ -33,9 +39,8 @@ args: ['--no-sandbox']
   const CookieValidation = await page.$('.bIiDR');
   await CookieValidation.click();
 
-  await page.waitFor(2000);
-
-
+  await page.waitFor(1000);
+  
   const Identifiant = await page.$('.pexuQ');
   await Identifiant.type(pseudo);
 
