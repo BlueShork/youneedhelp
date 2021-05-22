@@ -12,7 +12,7 @@ class Instagram{
 const puppeteer = require('puppeteer');
 async function main() {
   const browser = await puppeteer.launch({
-    headless: true,
+    headless: false,
     args: [
         '--disable-gpu',
         '--disable-setuid-sandbox',
@@ -36,13 +36,16 @@ async function main() {
 
 
 
-  // const CookieValidation = await page.$('button.bIiDR');
-  // await CookieValidation.click();
+  const CookieValidation = await page.$('button.bIiDR');
+  await CookieValidation.click();
 
 
 
+  await page.waitFor(500);
 
-  const Identifiant = await page.$('.pexuQ');
+
+
+  const Identifiant = await page.$('input[name="username"]');
   await Identifiant.type(pseudo);
 
 
