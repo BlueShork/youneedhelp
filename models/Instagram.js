@@ -12,7 +12,7 @@ class Instagram{
 const puppeteer = require('puppeteer');
 async function main() {
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     args: [
         '--disable-gpu',
         '--disable-setuid-sandbox',
