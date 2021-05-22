@@ -66,8 +66,8 @@ async function main() {
 
   await page.waitFor(3000);
 
-  const Notification = await page.$('.HoLwm');
-  await Notification.click();
+  // const Notification = await page.$('.HoLwm');
+  // await Notification.click();
 
   await page.waitFor(2000);
 
